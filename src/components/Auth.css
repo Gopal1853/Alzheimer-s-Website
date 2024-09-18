@@ -1,0 +1,76 @@
+body {
+  background-image: url('background.jpg'), url('pattern.png'); /* Two background images */
+  background-repeat: no-repeat,repeat; /* First image does not repeat, second image repeats */
+  background-position: top, bottom; /* First image at the top, second at the bottom */
+  background-size: cover, contain; /* Adjust sizes: first image covers the whole width, second is contained */
+  font-family: Arial, sans-serif;
+  background-color: #050505;
+  margin: 1;
+  padding: 0;
+}
+
+header {
+text-align: center;
+padding: 20px;
+background-image: url('pims.png');
+color: rgb(230, 214, 214);
+font-size: 20px;
+}
+
+.footer_text {
+text-align: center;
+font-size: 24px;
+color: #0a0000;
+margin-top: 20px;
+}
+
+/* Auth forms styling */
+.auth-forms {
+background-color: rgb(161, 179, 231);
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.toggle-button {
+margin-top: 10px;
+padding: 10px;
+background-color: #4fa5de;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.toggle-button:hover {
+background-color: #005f99;
+}
+
+/* Keyframe for task management image to come from the left */
+@keyframes slideInFromLeft {
+0% {
+  transform: translateX(-50%);
+  opacity: 0;
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+
+/* Initially hide the images */
+.image-scroll {
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+/* Active class for images when they should appear */
+.image-scroll.active {
+opacity: 0;
+}
+
+/* Trigger left animation */
+.image-task-scroll.active {
+animation: slideInFromLeft 0.5s forwards;
+}
