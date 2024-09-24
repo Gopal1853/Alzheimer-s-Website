@@ -192,12 +192,6 @@ const AuthPage = () => {
           <p id="confirmationMessage" className="mt-4 text-green-600">{confirmationMessage}</p>
         </div>
       </section>
-
-      <footer className="footer_text text-center bg-cyan-600 text-black py-4">
-        <p>Developed under - Puducherry Technological University</p>
-        <p>Developer - R Gopalram</p>
-        <p>Contact: rgopalram737@gmail.com</p>
-      </footer>
     </div>
   );
 };
